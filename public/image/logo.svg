@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+    <g transform="translate(4, 6)">
+        <!-- Car Silhouette / Icon -->
+        <rect x="0" y="0" width="36" height="36" rx="8" fill="#2563EB"/>
+        <path d="M7 23C7 21 8.5 17 11 16L15 12H21L25 16C27.5 17 29 21 29 23V25C29 25.5 28.5 26 28 26H27C27 24.5 25.5 23 24 23C22.5 23 21 24.5 21 26H15C15 24.5 13.5 23 12 23C10.5 23 9 24.5 9 26H8C7.5 26 7 25.5 7 25V23Z" fill="white"/>
+        <circle cx="12" cy="25" r="2" fill="#2563EB"/>
+        <circle cx="24" cy="25" r="2" fill="#2563EB"/>
+        <path d="M12 16L15 13H21L24 16H12Z" fill="#93C5FD"/>
+    </g>
+    <!-- Brand Text -->
+    <text x="48" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#0F172A">
+        Car<tspan fill="#2563EB">Selling</tspan>
+    </text>
+</svg>

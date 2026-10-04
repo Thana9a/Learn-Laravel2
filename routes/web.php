@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\CarController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SigupController;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Route;
 
@@ -65,3 +69,11 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::view('/', 'home.index');
+
+Route::get('/sigup', [SigupController::class, 'create'])->name('sigup');
+Route::get('/login',[LoginController::class, 'create'])->name('login');
+
+Route::get('/car/search', [CarController::class, 'search'])-> name('car.search');
+Route::resource('car', CarController::class);
+
+Route::get('/',[HomeController::class , 'index'])->name('home');
