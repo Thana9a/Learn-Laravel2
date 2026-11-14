@@ -9,7 +9,7 @@ class CarController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Car $car)
     {
         return view('car.index');
     }
@@ -17,7 +17,7 @@ class CarController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Car $car)
     {
         return view('car.create');
     }
@@ -33,7 +33,7 @@ class CarController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Car $car)
     {
         return view('car.show');
     }
@@ -41,7 +41,7 @@ class CarController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Car $car)
     {
         return view('car.edit');
     }
@@ -49,7 +49,7 @@ class CarController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Car $car)
     {
         return view('car.update');
     }
@@ -57,12 +57,13 @@ class CarController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Car $car)
     {
         return view('car.destroy');
     }
 
-    public function search(){
+    public function search()
+    {
         return view('car.search');
     }
 }

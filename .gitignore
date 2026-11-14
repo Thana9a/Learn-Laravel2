@@ -4,6 +4,7 @@
 .env.backup
 .env.production
 .phpactor.json
+.opencode.json
 .phpunit.result.cache
 /.codex
 /.cursor/
